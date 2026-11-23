@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   BlackBrixComments
+  ~ @copyright Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+<extension version="3.9.0" type="plugin" group="privacy" method="upgrade">
+    <name>PLG_PRIVACY_BBCOMMENTS</name>
+    <description>PLG_PRIVACY_BBCOMMENTS_XML_DESC</description>
+    <version>1.0.0</version>
+    <creationDate>2026-11-23</creationDate>
+    <author>BlackBrix</author>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd; modifications (c)2026 BlackBrix</copyright>
+    <license>GNU/GPL v3 or any later version</license>
+    <namespace path="src">BlackBrix\Plugin\Privacy\Bbcomments</namespace>
+
+    <files>
+        <folder>services</folder>
+        <folder plugin="bbcomments">src</folder>
+
+        <filename>.htaccess</filename>
+        <filename>web.config</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="de-DE">de-DE/plg_privacy_bbcomments.ini</language>
+        <language tag="de-DE">de-DE/plg_privacy_bbcomments.sys.ini</language>
+        <language tag="en-GB">en-GB/plg_privacy_bbcomments.ini</language>
+        <language tag="en-GB">en-GB/plg_privacy_bbcomments.sys.ini</language>
+    </languages>
+
+</extension>
