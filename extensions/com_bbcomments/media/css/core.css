@@ -1,0 +1,10 @@
+/* BlackBrix Comments 1.0.0: essential reply indentation; always loaded.
+   Works with list-unstyled and templates without nested-list defaults. */
+section.bbcomments-outer-container .bbcomments-list-container > ul.bbcomments-comment-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+section.bbcomments-outer-container .bbcomments-list-container ul.bbcomments-comment-list > li.bbcomments-comment-item > ul.bbcomments-comment-list {
+    margin-left: 2em;
+    padding-left: 0;
+}

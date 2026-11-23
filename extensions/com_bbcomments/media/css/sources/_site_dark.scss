@@ -1,0 +1,115 @@
+/*
+ * @package   BlackBrixComments
+ * @copyright Copyright (c)2020-2022 Nicholas K. Dionysopoulos / Akeeba Ltd
+ * @license   GNU General Public License version 3, or later
+ */
+
+@import "variables";
+
+h3.bbcomments-title {
+  border-color: $light-grey;
+}
+
+a {
+  color: $teal;
+}
+
+div.bbcomments-list-container {
+  ol.bbcomments-comment-list {
+    button {
+
+    }
+
+    li.bbcomments-comment-item {
+      article[class^=bbcomments-comment] {
+        footer.bbcomments-comment-properties {
+          background-color: darken($grey, 10%);
+
+          div.bbcomments-commenter-name {
+            color: $light-grey;
+
+            span.bbcomments-commenter-username {
+              color: $green;
+            }
+          }
+
+          span.bbcomments-comment-permalink > a {
+            color: $light-grey;
+          }
+
+          span.bbcomments-comment-actions {
+            span.bbcomments-comment-delete,
+            span.bbcomments-comment-mark-spam {
+              button {
+                color: lighten($red, 10%)
+              }
+            }
+
+            span.bbcomments-comment-mark-ham {
+              button {
+                color: $green;
+              }
+            }
+
+            span.bbcomments-comment-mark-possiblespam {
+              button {
+                color: $orange;
+              }
+            }
+
+          }
+
+        }
+
+        &[class*=--unpublished] {
+          background-color: darken($orange, 48%);
+          border-color: $orange;
+
+          footer.bbcomments-comment-properties {
+            background-color: darken($orange, 55%);
+          }
+        }
+
+        &[class*=--spam] {
+          background-color: darken($red, 44%);
+          border-color: $red;
+
+          footer.bbcomments-comment-properties {
+            background-color: darken($red, 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+div.bbcomments-pagination-pages {
+
+  a, span.active {
+    color: lighten($teal, 20%) !important;
+  }
+
+  span.active {
+    color: $light-grey;
+  }
+}
+
+div#bbcomments-comment-form {
+  border-color: $light-grey;
+
+  h4 {
+    color: lighten($teal, 10%);
+  }
+
+  div#bbcomments-comment-inreplyto-wrapper {
+    background-color: darken($teal, 20%);
+    border-color: $teal;
+    color: $light-grey;
+
+    button#bbcomments-comment-inreplyto-cancel {
+      background-color: darken($red, 30%);
+      border-color: lighten($red, 20%);
+      color: $light-grey;
+    }
+  }
+}

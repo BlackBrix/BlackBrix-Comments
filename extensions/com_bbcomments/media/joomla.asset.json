@@ -1,0 +1,86 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_bbcomments",
+  "version": "1.0.0",
+  "description": "BlackBrix Comments",
+  "license": "GPL-3.0-or-later",
+  "assets": [
+    {
+      "name": "com_bbcomments.backend",
+      "description": "CSS for backend pages",
+      "type": "style",
+      "uri": "com_bbcomments/backend.css"
+    },
+    {
+      "name": "com_bbcomments.j5",
+      "description": "CSS for backend pages on Joomla! 5",
+      "type": "style",
+      "uri": "com_bbcomments/j5.css"
+    },
+    {
+      "name": "com_bbcomments.core",
+      "description": "Essential reply indentation, always loaded on the frontend",
+      "type": "style",
+      "uri": "com_bbcomments/core.css"
+    },
+    {
+      "name": "com_bbcomments.comments",
+      "description": "CSS for the comments in the frontend",
+      "type": "style",
+      "uri": "com_bbcomments/comments.css"
+    },
+    {
+      "name": "com_bbcomments.backend",
+      "description": "Backend JavaScript",
+      "type": "script",
+      "uri": "com_bbcomments/backend.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_bbcomments.comments",
+      "description": "Comments JavaScript",
+      "type": "script",
+      "uri": "com_bbcomments/comments.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_bbcomments.events",
+      "description": "Common events handling JavaScript",
+      "type": "script",
+      "uri": "com_bbcomments/events.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_bbcomments.backend",
+      "type": "preset",
+      "dependencies": [
+        "com_bbcomments.backend#style",
+        "com_bbcomments.backend#script",
+        "com_bbcomments.events#script"
+      ]
+    },
+    {
+      "name": "com_bbcomments.frontend",
+      "type": "preset",
+      "dependencies": [
+        "com_bbcomments.core#style",
+        "com_bbcomments.comments#script"
+      ]
+    }
+  ]
+}
