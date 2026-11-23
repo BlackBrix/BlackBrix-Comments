@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="5.0" method="upgrade">
+    <name>COM_BBENGAGEEXPORT</name>
+    <author>BlackBrix</author><creationDate>2026-11-22</creationDate>
+    <copyright>Copyright (c) 2026 BlackBrix</copyright>
+    <license>GPL-3.0-or-later</license><version>1.0.0</version>
+    <description>COM_BBENGAGEEXPORT_DESC</description>
+    <namespace path="src">BlackBrix\Component\Bbengageexport</namespace>
+    <administration>
+        <menu>COM_BBENGAGEEXPORT</menu>
+        <files folder="administrator">
+            <folder>services</folder><folder>src</folder><folder>tmpl</folder>
+        </files>
+        <languages folder="language">
+            <language tag="de-DE">de-DE/com_bbengageexport.ini</language>
+            <language tag="de-DE">de-DE/com_bbengageexport.sys.ini</language>
+            <language tag="en-GB">en-GB/com_bbengageexport.ini</language>
+            <language tag="en-GB">en-GB/com_bbengageexport.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

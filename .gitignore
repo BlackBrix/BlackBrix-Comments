@@ -1,0 +1,15 @@
+# Local/runtime files
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+*.sql.gz
+*.bak
+*.zip
+!tools/legacy-exporter/LICENSE-GPLv3.txt
+# Never commit backups, exported comments or site secrets
+configuration.php
+blackbrix-engage-export-*.json
+.env

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   BlackBrixComments
+  ~ @copyright Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+
+<extension version="4.0.0" type="package" method="upgrade">
+    <name>pkg_bbcomments</name>
+    <version>1.0.0</version>
+    <creationDate>2026-11-23</creationDate>
+    <author>BlackBrix</author>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <packagename>bbcomments</packagename>
+    <url></url>
+    <packager>BlackBrix</packager>
+    <packagerurl></packagerurl>
+    <copyright>Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd; modifications (c)2026 BlackBrix</copyright>
+    <license>GNU GPL v3 or later</license>
+    <description>PKG_BBCOMMENTS_XML_DESCRIPTION</description>
+    <blockChildUninstall>true</blockChildUninstall>
+
+    <files>
+        <file type="component" id="com_bbcomments">com_bbcomments.zip</file>
+
+
+        <file type="plugin" group="actionlog" id="bbcomments">plg_actionlog_bbcomments.zip</file>
+
+
+        <file type="plugin" group="content" id="bbcomments">plg_content_bbcomments.zip</file>
+
+
+        <file type="plugin" group="bbcomments" id="email">plg_bbcomments_email.zip</file>
+
+        <file type="plugin" group="privacy" id="bbcomments">plg_privacy_bbcomments.zip</file>
+
+        <file type="plugin" group="system" id="bbcomments">plg_system_bbcomments.zip</file>
+
+        <file type="plugin" group="user" id="bbcomments">plg_user_bbcomments.zip</file>
+    </files>
+
+    <languages folder="language">
+        <language tag="de-DE">de-DE/pkg_bbcomments.sys.ini</language>
+        <language tag="en-GB">en-GB/pkg_bbcomments.sys.ini</language>
+    </languages>
+
+    <scriptfile>script.bbcomments.php</scriptfile>
+
+</extension>
