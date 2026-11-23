@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   BlackBrixComments
+  ~ @copyright Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+<config>
+    <inlinehelp button="show"/>
+    <fieldset
+            name="basic"
+            label="COM_BBCOMMENTS_CONFIG_BASIC_FIELDSET_LABEL"
+            description="COM_BBCOMMENTS_CONFIG_BASIC_FIELDSET_DESC"
+    >
+        <field
+                name="max_level"
+                type="integer"
+                label="COM_BBCOMMENTS_CONFIG_MAX_LEVEL_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_MAX_LEVEL_DESC"
+                default="3"
+                first="1" last="6" step="1"
+        />
+
+        <field
+                name="default_limit"
+                type="list"
+                label="COM_BBCOMMENTS_DEFAULT_LIMIT_LABEL"
+                description="COM_BBCOMMENTS_DEFAULT_LIMIT_DESC"
+                default="20"
+                useglobal="1"
+        >
+            <option value="5">J5</option>
+            <option value="10">J10</option>
+            <option value="15">J15</option>
+            <option value="20">J20</option>
+            <option value="25">J25</option>
+            <option value="30">J30</option>
+            <option value="50">J50</option>
+            <option value="100">J100</option>
+            <option value="200">J200</option>
+            <option value="500">J500</option>
+            <option value="0">JALL</option>
+        </field>
+
+        <field
+                name="captcha"
+                type="plugins"
+                label="COM_BBCOMMENTS_CONFIG_CAPTCHA_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_CAPTCHA_DESC"
+                folder="captcha"
+                filter="cmd"
+                useglobal="true"
+        >
+            <option value="-1">JOPTION_DO_NOT_USE</option>
+        </field>
+
+        <field
+                name="captcha_for"
+                type="list"
+                label="COM_BBCOMMENTS_CONFIG_CAPTCHA_FOR_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_CAPTCHA_FOR_DESC"
+                default="guests"
+                showon="captcha!:-1"
+        >
+            <option value="guests">COM_BBCOMMENTS_CONFIG_CAPTCHA_FOR_GUESTS</option>
+            <option value="nonmanager">COM_BBCOMMENTS_CONFIG_CAPTCHA_FOR_NONMANAGER</option>
+            <option value="all">COM_BBCOMMENTS_CONFIG_CAPTCHA_FOR_ALL</option>
+        </field>
+
+        <field
+                name="tos_accept"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_CONFIG_TOS_ACCEPT_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_TOS_ACCEPT_DESC"
+                default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="tos_prompt"
+                type="text"
+                label="COM_BBCOMMENTS_CONFIG_TOS_PROMPT_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_TOS_PROMPT_DESC"
+                default=""
+                filter="safehtml"
+                class="input-xxlarge"
+                showon="tos_accept!:0"
+        />
+
+        <field
+                name="comments_reply_bad_ux"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_COMMENTS_REPLY_BAD_UX_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_REPLY_BAD_UX_DESC"
+                default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="pleaseWait"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_COMMENTS_PLEASEWAIT_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_PLEASEWAIT_DESC"
+                default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="min_length"
+                type="number"
+                label="COM_BBCOMMENTS_COMMENTS_MIN_LENGTH_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_MIN_LENGTH_DESC"
+                default="0"
+                min="0"
+                max="1048576"
+                step="1"
+        />
+
+        <field
+                name="max_length"
+                type="number"
+                label="COM_BBCOMMENTS_COMMENTS_MAX_LENGTH_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_MAX_LENGTH_DESC"
+                default="0"
+                min="0"
+                max="1048576"
+                step="1"
+        />
+
+        <field
+                name="header_overridable"
+                type="note"
+                label="COM_BBCOMMENTS_CONFIG_HEADER_OVERRIDABLE_HEADER"
+        />
+
+        <field
+                type="note"
+                class="alert alert-info"
+                description="COM_BBCOMMENTS_CONFIG_HEADER_OVERRIDABLE_DESC"
+        />
+
+        <field
+                name="default_publish"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_DEFAULT_PUBLISH_LABEL"
+                description="COM_BBCOMMENTS_DEFAULT_PUBLISH_DESC"
+                default="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                name="comments_show"
+                type="list"
+                label="COM_BBCOMMENTS_COMMENTS_SHOW_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_SHOW_DESC"
+                default="1"
+        >
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+
+        <field
+                name="comments_show_featured"
+                type="list"
+                label="COM_BBCOMMENTS_COMMENTS_SHOW_FEATURE_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_SHOW_FEATURE_DESC"
+                default="1"
+                showon="comments_show:1"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_BEFORE</option>
+            <option value="2">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_AFTER</option>
+        </field>
+
+        <field
+                name="comments_show_category"
+                type="list"
+                label="COM_BBCOMMENTS_COMMENTS_SHOW_CATEGORY_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_SHOW_CATEGORY_DESC"
+                default="1"
+                showon="comments_show:1"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_BEFORE</option>
+            <option value="2">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_AFTER</option>
+        </field>
+
+        <field
+                name="comments_show_article"
+                type="list"
+                label="COM_BBCOMMENTS_COMMENTS_SHOW_ARTICLE_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_SHOW_ARTICLE_DESC"
+                default="1"
+                showon="comments_show:1"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_BEFORE</option>
+            <option value="2">COM_BBCOMMENTS_OPT_COMMENTS_SHOW_AFTER</option>
+        </field>
+
+        <field
+                name="comments_ordering"
+                type="list"
+                label="COM_BBCOMMENTS_COMMENTS_ORDERING_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_ORDERING_DESC"
+                default="asc"
+                showon="comments_show:1"
+        >
+            <option value="asc">JGLOBAL_ORDER_ASCENDING</option>
+            <option value="desc">JGLOBAL_ORDER_DESCENDING</option>
+        </field>
+
+        <field
+                name="comments_enabled"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_COMMENTS_ENABLED_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_ENABLED_DESC"
+                default="1"
+                showon="comments_show:1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="comments_close_after"
+                type="integer"
+                label="COM_BBCOMMENTS_COMMENTS_CLOSE_AFTER_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_CLOSE_AFTER_DESC"
+                first="0" last="3650" step="1"
+                default="0"
+                showon="comments_show:1[AND]comments_enabled:1"
+        />
+
+        <field
+                name="comments_notify_author"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_COMMENTS_NOTIFY_AUTHOR_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_NOTIFY_AUTHOR_DESC"
+                default="1"
+                showon="comments_enabled:1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="comments_notify_users"
+                type="radio"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_BBCOMMENTS_COMMENTS_NOTIFY_USERS_LABEL"
+                description="COM_BBCOMMENTS_COMMENTS_NOTIFY_USERS_DESC"
+                default="1"
+                showon="comments_enabled:1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="comments_context" type="list"
+               label="COM_BBCOMMENTS_CONTEXT_LABEL"
+               description="COM_BBCOMMENTS_CONTEXT_DESC"
+               default="comment">
+            <option value="comment">COM_BBCOMMENTS_CONTEXT_COMMENT</option>
+            <option value="guestbook">COM_BBCOMMENTS_CONTEXT_GUESTBOOK</option>
+        </field>
+
+        <field name="comments_guestbook_button" type="radio"
+               layout="joomla.form.field.radio.switcher"
+               label="COM_BBCOMMENTS_GUESTBOOK_BUTTON_LABEL"
+               description="COM_BBCOMMENTS_GUESTBOOK_BUTTON_DESC"
+               default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+    </fieldset>
+
+    <fieldset name="filtering" label="COM_BBCOMMENTS_CONFIG_FILTERING_FIELDSET_LABEL">
+        <field name="native_html_filter" type="note"
+               label="COM_BBCOMMENTS_BB_FILTER_LABEL"
+               description="COM_BBCOMMENTS_BB_FILTER_DESC" />
+    </fieldset>
+
+    <fieldset
+            name="advanced"
+            label="COM_BBCOMMENTS_CONFIG_ADVANCED_FIELDSET_LABEL"
+            description="COM_BBCOMMENTS_CONFIG_ADVANCED_FIELDSET_DESC"
+    >
+
+        <field
+                name="iplookup"
+                type="text"
+                default="https://whatismyipaddress.com/ip/%s"
+                label="COM_BBCOMMENTS_CONFIG_IPLOOKUP_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_IPLOOKUP_DESC"/>
+
+        <field
+                name="max_spam_age"
+                type="integer"
+                first="0"
+                last="365"
+                step="1"
+                default="15"
+                label="COM_BBCOMMENTS_CONFIG_MAX_SPAM_AGE_LABEL"
+                description="COM_BBCOMMENTS_CONFIG_MAX_SPAM_AGE_DESC"/>
+
+        <field name="loadCustomCss"
+               type="radio"
+               layout="joomla.form.field.radio.switcher"
+               default="0"
+               label="COM_BBCOMMENTS_CONFIG_LOADCUSTOMCSS_LABEL"
+               description="COM_BBCOMMENTS_CONFIG_LOADCUSTOMCSS_DESC"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+    </fieldset>
+
+    <fieldset
+            name="permissions"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            description="JCONFIG_PERMISSIONS_DESC"
+    >
+
+        <field
+                name="rules"
+                type="rules"
+                label="JCONFIG_PERMISSIONS_LABEL"
+                class="inputbox"
+                filter="rules"
+                component="com_bbcomments"
+                section="component"/>
+    </fieldset>
+</config>
