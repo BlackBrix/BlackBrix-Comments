@@ -13,7 +13,7 @@
 	<authorUrl></authorUrl>
 	<copyright>Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd; modifications (c)2026 BlackBrix</copyright>
 	<license>GNU/GPL v3 or any later version</license>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>COM_BBCOMMENTS_XML_DESCRIPTION</description>
 	<namespace path="src">BlackBrix\Component\Bbcomments</namespace>
 

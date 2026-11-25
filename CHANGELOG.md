@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.1 — 2026-11-25
+
+Maintenance release based on the fully tested 1.0.0/alpha9.3 functionality.
+
+- The **new-comment form** now uses its dedicated language key `COM_BBCOMMENTS_COMMENTS_FORM_BTN_SUBMIT` instead of the edit-form key.
+- Updated frontend translations: **Senden** (de-DE) and **Submit** (en-GB) for new comments. The edit form still uses **Speichern** / **Save**.
+- Updated the version in the package, component and all six plugin manifests to `1.0.1`, as well as the Web Asset Manager version in `joomla.asset.json`.
+- Included the eight existing `.htaccess` protection files in the repository sources, so the tracked source matches the published install package.
+- Updated the README, migration documentation and release notes to refer to `1.0.1`; the separate legacy JSON exporter remains version `1.0.0`.
+- **No intentional change** to the database schema, JSON migration, security checks, comment handling, moderation or notification logic.
+
+
 ## 1.0.0 — 2026-11-23
 
 First public release based on the extensively Joomla-tested `0.1.0-alpha9.3` feature baseline.

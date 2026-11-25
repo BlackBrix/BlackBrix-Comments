@@ -7,7 +7,7 @@
 <extension version="3.9.0" type="plugin" group="actionlog" method="upgrade">
     <name>PLG_ACTIONLOG_BBCOMMENTS</name>
     <description>PLG_ACTIONLOG_BBCOMMENTS_XML_DESC</description>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <creationDate>2026-11-23</creationDate>
     <author>BlackBrix</author>
     <authorEmail></authorEmail>
