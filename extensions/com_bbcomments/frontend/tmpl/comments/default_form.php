@@ -80,7 +80,7 @@ HTMLHelper::_('behavior.formvalidator');
 						class="btn btn-lg btn-primary w-100 bbcomments-comment-submit-btn"
 				>
 					<span class="fa fa-comment-dots" aria-hidden="true"></span>
-					<?= Text::_('COM_BBCOMMENTS_COMMENTS_FORM_EDIT_BTN_SUBMIT') ?>
+					<?= Text::_('COM_BBCOMMENTS_COMMENTS_FORM_BTN_SUBMIT') ?>
 				</button>
 			</div>
 		</div>
