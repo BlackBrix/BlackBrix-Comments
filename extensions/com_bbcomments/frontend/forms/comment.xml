@@ -111,6 +111,7 @@
                id="commentText"
                cols="50"
                rows="5"
+			   height="500"
                filter="\BlackBrix\Component\Bbcomments\Administrator\Helper\HtmlFilter::filterText"
                buttons="false"
                hiddenLabel="false"
