@@ -49,14 +49,14 @@
                rows="5"
                filter="\BlackBrix\Component\Bbcomments\Administrator\Helper\HtmlFilter::filterText"
                buttons="false"
-               hiddenLabel="true"
+               hiddenLabel="false"
                required="true"
         />
 
         <field
                 name="captcha"
                 type="captcha"
-                hiddenLabel="true"
+                hiddenLabel="false"
                 validate="captcha"
         />
 
