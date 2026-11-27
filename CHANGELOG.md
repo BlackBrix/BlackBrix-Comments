@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.3 — 2026-11-27
+
+Maintenance release with a translated, visible CAPTCHA field label in the new-comment form.
+
+- Added `label="COM_BBCOMMENTS_COMMENT_FIELD_CAPTCHA"` to `frontend/forms/comment_new.xml`; `hiddenLabel="false"` remains in place.
+- Added the new frontend translation key in German and English (`Captcha:`). Whether the label is visible depends on the selected CAPTCHA plugin respecting the explicit `hiddenLabel` setting; the external Captcha QA plugin is not bundled with BlackBrix Comments.
+- Removed a duplicate (identical) `COM_BBCOMMENTS_TITLE_EMAILTEMPLATES` definition from each of the German and English backend language files; translated text is unchanged.
+- Updated the version to `1.0.3` in the package, component, six plugin manifests and web assets; updated current documentation and release notes. The separately installable migration exporter remains at version `1.0.0`.
+- **No intentional change** to PHP, JavaScript, SQL/database schema, migration, moderation, notification logic or existing comment data.
+
+
 ## 1.0.2 — 2026-11-27
 
 small changes in the forms XML templates: `comment.xml` and `comment_new.xml`
@@ -34,4 +45,4 @@ First public release based on the extensively Joomla-tested `0.1.0-alpha9.3` fea
 - Prepared release README, migration instructions and separately installable one-time JSON exporter.
 - **No intentional functional change** to the JSON import, SQL schema, notifications, HTML filtering, threaded replies, or legacy-extension safety guards.
 
-Refer to `CHANGELOG-alpha9.3.md` for the latest functional changes.
+For the first public version and its tested alpha9.3 baseline, see [release notes for 1.0.0](docs/RELEASE_1.0.0.md).

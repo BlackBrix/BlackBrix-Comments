@@ -7,7 +7,7 @@
 
 <extension version="4.0.0" type="package" method="upgrade">
     <name>pkg_bbcomments</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <creationDate>2026-11-27</creationDate>
     <author>BlackBrix</author>
     <authorEmail></authorEmail>

@@ -54,12 +54,13 @@
                required="true"
         />
 
-        <field
-                name="captcha"
-                type="captcha"
-                hiddenLabel="false"
-                validate="captcha"
-        />
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_BBCOMMENTS_COMMENT_FIELD_CAPTCHA"
+			hiddenLabel="false"
+			validate="captcha"
+		/>
 
         <field
                 name="accept_tos"

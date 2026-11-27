@@ -1,4 +1,4 @@
-# Migrating Akeeba Engage 3.4.3 to BlackBrix Comments 1.0.2
+# Migrating Akeeba Engage 3.4.3 to BlackBrix Comments 1.0.3
 
 This is a **one-time migration on the same Joomla installation** (or a complete clone preserving article IDs, titles, aliases and the Joomla `$secret`). The domain, site path and database credentials may differ on a test clone.
 
@@ -8,7 +8,7 @@ This is a **one-time migration on the same Joomla installation** (or a complete 
 1. On the existing Joomla installation **while the Akeeba Engage extension is still installed**, install the *separate* exporter `com_bbengageexport-1.0.0.zip`, export JSON and securely store it.
 2. **Verify the JSON** against the Akeeba Engage comment totals and reply relationships. Save the backup and JSON before removing anything.
 3. Uninstall the Akeeba Engage extension and its subextensions, then remove the temporary exporter. Check for leftover Akeeba Engage data tables. Do not blindly delete shared libraries required by other extensions or unverified tables.
-4. Install `pkg_bbcomments-1.0.2.zip`. If upgrading from BlackBrix alpha, **upgrade in place; do not uninstall**.
+4. Install `pkg_bbcomments-1.0.3.zip`. If upgrading from BlackBrix alpha, **upgrade in place; do not uninstall**.
 5. In BlackBrix Comments → **Import (Engage JSON)**, upload the original JSON, inspect the preview and explicitly confirm the import.
 6. Verify article mappings, published/unpublished statuses, parent-child replies, frontend/back-end display and notification opt-outs.
 

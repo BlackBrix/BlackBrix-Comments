@@ -1,4 +1,4 @@
-# BlackBrix Comments 1.0.2
+# BlackBrix Comments 1.0.3
 
 **A native comments and guestbook extension for Joomla 5.4.x / Joomla 6.2.x.** Licensed under GPL-3.0-or-later. German and English language packs are included.
 
@@ -7,11 +7,11 @@ BlackBrix Comments includes one Joomla package (`pkg_bbcomments`), a component (
 ## Installation / updates
 
 1. **Back up your Joomla files and database.**
-2. Install `pkg_bbcomments-1.0.2.zip` through the Joomla administrator's extension installer. Do **not** install the seven inner archives individually.
+2. Install `pkg_bbcomments-1.0.3.zip` through the Joomla administrator's extension installer. Do **not** install the seven inner archives individually.
 3. Review the component settings and plugins. On a clean installation the three customary plugins are initially enabled.
-4. For updates from BlackBrix Comments `1.0.0` or `1.0.1` or an earlier alpha build, install the new package **over the existing version without uninstalling it**. Existing comments, settings, mail templates and opt-outs are retained.
+4. For updates from BlackBrix Comments `1.0.0`, `1.0.1`, `1.0.2`, or an earlier alpha build, install the new package **over the existing version without uninstalling it**. Existing comments, settings, mail templates and opt-outs are retained.
 
-Joomla 6 operation is designed not to require Joomla's backward-compatibility plugin. The functional baseline was tested with Joomla 5.4.10 / 6.2.0 and PHP 8.4 / 8.5. Version 1.0.2 is a small form-label and version-metadata update; perform a smoke test on a clone before production deployment.
+Joomla 6 operation is designed not to require Joomla's backward-compatibility plugin. The functional baseline was tested with Joomla 5.4.10 / 6.2.0 and PHP 8.4 / 8.5. Version 1.0.3 adds a translated label for the new-comment CAPTCHA field and removes two duplicate backend language definitions. The display of the CAPTCHA label also depends on the selected CAPTCHA plugin respecting the form’s `hiddenLabel="false"` setting. Perform a smoke test on a clone before production deployment.
 
 ## Migration from the legacy extension
 
@@ -24,9 +24,10 @@ The receiving Joomla site must preserve original article IDs, titles and aliases
 This project contains modified GPL-licensed code; **original authors' legally required copyright/license notices are retained**. See [NOTICE.md](NOTICE.md) for provenance, third-party notices and modifications made in 2026. Full license: [LICENSE-GPLv3.txt](LICENSE-GPLv3.txt). No affiliation with or endorsement by the previous rights holders is implied.
 
 - [Changelog](CHANGELOG.md)
+- [1.0.3 release notes](docs/RELEASE_1.0.3.md)
 - [1.0.2 release notes](docs/RELEASE_1.0.2.md)
 - [1.0.1 release notes](docs/RELEASE_1.0.1.md)
 - [1.0.0 release notes](docs/RELEASE_1.0.0.md)
 - [Legacy exporter source](tools/legacy-exporter)
 
-**No warranty.** Before production use, test the final 1.0.2 package on a backup/clone.
+**No warranty.** Before production use, test the final 1.0.3 package on a backup/clone.

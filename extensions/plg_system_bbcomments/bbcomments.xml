@@ -7,7 +7,7 @@
 <extension version="4.0.0" type="plugin" group="system" method="upgrade">
     <name>PLG_SYSTEM_BBCOMMENTS</name>
     <description>PLG_SYSTEM_BBCOMMENTS_XML_DESC</description>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <creationDate>2026-11-27</creationDate>
     <author>BlackBrix</author>
     <authorEmail></authorEmail>
