@@ -1,3 +1,3 @@
-BlackBrix Comments 1.0.0: Copyright (c) 2026 BlackBrix (modifications).
+BlackBrix Comments 1.0.2: Copyright (c) 2026 BlackBrix (modifications).
 Portions Copyright (c) 2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd.
 Other original attribution remains in source. GNU GPL version 3 or later.

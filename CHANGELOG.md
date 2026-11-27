@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.2 — 2026-11-27
+
+small changes in the forms XML templates: `comment.xml` and `comment_new.xml`
+
+- introduced the `height` Parameter within the forms XML templates (controlling the vertical height of the textarea / TinyMCE editor).
+- switched the labels for the fields `body` and `captcha` to visible by using `hiddenLabel="false"` within the forms XML templates.
+- Updated the version in the package, component and all six plugin manifests to `1.0.2`, as well as the Web Asset Manager version in `joomla.asset.json`.
+- Updated the README, migration documentation and release notes to refer to `1.0.2`; the separate legacy JSON exporter remains version `1.0.0`.
+- **No intentional change** to the database schema, JSON migration, security checks, comment handling, moderation or notification logic.
+
+
+
 ## 1.0.1 — 2026-11-25
 
 Maintenance release based on the fully tested 1.0.0/alpha9.3 functionality.

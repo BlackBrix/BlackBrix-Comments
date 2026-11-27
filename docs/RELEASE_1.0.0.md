@@ -14,4 +14,4 @@ This release is based on the alpha9.3 build, which passed user runtime testing o
 
 **Compared with alpha9.3:** release version changes, documentation, attribution notice, and text-only branding cleanup. No intentional logic/schema changes. A final smoke-test of the newly versioned 1.0.0 ZIP on a Joomla clone is recommended before production deployment.
 
-See [README.md](../README.md), [NOTICE.md](../NOTICE.md) and [Migration instructions](MIGRATION_EN.md).
+See [Changelog](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.0/CHANGELOG.md), [README](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.0/README.md), and [Migration](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.0/docs/MIGRATION_EN.md).

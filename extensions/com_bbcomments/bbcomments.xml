@@ -7,13 +7,13 @@
 
 <extension type="component" version="4.0.0" method="upgrade">
 	<name>COM_BBCOMMENTS</name>
-	<creationDate>2026-11-23</creationDate>
+	<creationDate>2026-11-27</creationDate>
 	<author>BlackBrix</author>
 	<authorEmail></authorEmail>
 	<authorUrl></authorUrl>
 	<copyright>Copyright (c)2020-2025 Nicholas K. Dionysopoulos / Akeeba Ltd; modifications (c)2026 BlackBrix</copyright>
 	<license>GNU/GPL v3 or any later version</license>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>COM_BBCOMMENTS_XML_DESCRIPTION</description>
 	<namespace path="src">BlackBrix\Component\Bbcomments</namespace>
 

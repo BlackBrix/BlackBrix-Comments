@@ -23,4 +23,4 @@ Make a full backup, then install `pkg_bbcomments-1.0.1.zip` over v1.0.0 without 
 
 The source files in `extensions/` and `package/` (including version metadata and `.htaccess`) are aligned byte-for-byte with the published `pkg_bbcomments-1.0.1.zip` install archive. The separate exporter sources in `tools/legacy-exporter/` are unchanged and match `com_bbengageexport-1.0.0.zip`.
 
-See [Changelog](../CHANGELOG.md), [README](../README.md), and [Migration](MIGRATION_EN.md).
+See [Changelog](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.1/CHANGELOG.md), [README](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.1/README.md), and [Migration](https://github.com/BlackBrix/BlackBrix-Comments/blob/v1.0.1/docs/MIGRATION_EN.md).

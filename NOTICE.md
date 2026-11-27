@@ -1,6 +1,6 @@
 # Copyright, licensing and provenance
 
-**BlackBrix Comments 1.0.1** — modifications and further development © 2026 BlackBrix. The derivative work is distributed under **GNU GPL version 3 or later**.
+**BlackBrix Comments 1.0.2** — modifications and further development © 2026 BlackBrix. The derivative work is distributed under **GNU GPL version 3 or later**.
 
 This project contains code derived from GPL-licensed **Akeeba Engage**. Copyright notices for inherited material, including **Copyright (c) 2020–2025 Nicholas K. Dionysopoulos / Akeeba Ltd**, have been retained where present in the source. Substantial modifications and rebranding do not extinguish the original authors' rights. The derivative is a separate product; no affiliation with or endorsement from the previous rights holders is implied.
 
